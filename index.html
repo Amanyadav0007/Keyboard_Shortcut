@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Shortcut Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header id="mainHeader">
+        <!-- <h2>🧠 Shortcut Quiz Challenge</h2> -->
+        <h2>🧠 Are you ready?</h2>
+    </header>
+
+    <div class="container">
+        <h1>Keyboard Shortcut Quiz</h1>
+
+        <!-- Intro Screen -->
+        <div id="introScreen">
+            <p>⚡Let's start a quick test on <span>vscode shortcuts</span>!</p>
+            <button id="startBtn">Start Test</button>
+        </div>
+
+        <!-- Quiz Area -->
+        <div id="quizBox" class="hidden">
+            <div id="question">Press the shortcut for: ...</div>
+            <div class="options" id="options"></div>
+            <div class="info">
+                <p>⏱ Time Left: <span id="timer">15</span>s</p>
+                <p>🏆 Score: <span id="score">0</span></p>
+            </div>
+        </div>
+
+        <!-- Result Popup -->
+        <div id="resultBox" class="hidden">
+            <h2>🎉 Test Complete!</h2>
+            <p id="finalScore"></p> <!-- updated to be filled with name + score -->
+            <button id="restartBtn">Restart Test</button>
+        </div>
+
+    </div>
+
+    <footer id="mainFooter">
+        <p>Made with ❤️ by <a href="https://github.com/Amanyadav0007/Keyboard_Shortcut" target="_blank">Aman Yadav</a></p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
